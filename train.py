@@ -26,13 +26,13 @@ def train():
     X_test = extractor.transform(test_reviews)
     
     feature_names = extractor.get_feature_names()
-    print(f"✓ Feature matrix shape: {X_train.shape}")
+    print(f"Feature matrix shape: {X_train.shape}")
     
     # Initialize model
     print("\n[3/4] Initializing model...")
     input_dim = X_train.shape[1]
     model = ANNModel(input_dim=input_dim, hidden1=128, hidden2=64, learning_rate=0.01)
-    print(f"✓ Model created: {input_dim} → 128 → 64 → 1")
+    print(f"Model created: {input_dim} → 128 → 64 → 1")
     
     # Training loop
     print("\n[4/4] Training model...")
@@ -103,7 +103,7 @@ def train():
     })
     
     # Generate visualizations
-    print("\n[✓] Generating visualizations...")
+    print("\nGenerating visualizations...")
     
     # Loss curve
     plt.figure(figsize=(12, 4))
