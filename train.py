@@ -32,7 +32,7 @@ def train():
     print("\n[3/4] Initializing model...")
     input_dim = X_train.shape[1]
     model = ANNModel(input_dim=input_dim, hidden1=128, hidden2=64, learning_rate=0.01)
-    print(f"Model created: {input_dim} → 128 → 64 → 1")
+    print(f"Model created: {input_dim}")
     
     # Training loop
     print("\n[4/4] Training model...")
